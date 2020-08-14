@@ -6,6 +6,7 @@
   "scripts": {
     "build:css": "postcss src/app.css -o build/index.css",
     "build:js": "babel src/app.js -d build",
+    "watch:js": "babel src/app.js -d build --watch",
     "watch": "postcss src/app.css -o build/index.css --watch"
   },
   "keywords": [],

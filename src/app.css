@@ -1,10 +1,26 @@
 @tailwind base;
 @tailwind components;
 
+.btn{
+    @apply px-10 py-2 text-white bg-Cyan outline-none;
+}
 
 
+.url_svg{
+    background: url(images/bg-shorten-mobile.svg);
+    right: 0;
+    object-position: right;
+    background-repeat: no-repeat;
+    width: 100%;
+    
+}
 
+.record{
+    @apply px-4 pt-24 pb-7 w-11/12 m-auto bg-white rounded-md;
 
-
+}
+.record-heading{
+    @apply text-2xl font-bold text-VeryDarkBlue mb-6;
+}
 
 @tailwind utilities;
