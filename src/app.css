@@ -16,11 +16,15 @@
 }
 
 .record{
-    @apply px-4 pt-24 pb-7 w-11/12 m-auto bg-white rounded-md;
+    @apply px-4 pb-7 w-11/12 m-auto bg-white rounded-md;
 
 }
 .record-heading{
     @apply text-2xl font-bold text-VeryDarkBlue mb-6;
+}
+
+.imgdit{
+    top:-3em;
 }
 
 @tailwind utilities;

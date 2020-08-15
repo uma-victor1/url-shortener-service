@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="index.css">
 </head>
 
-<body class="box-border m-0 p-0 font-sans">
+<body class="box-border m-0 p-0 font-sans relative">
     <header class="w-full flex mt-8">
         <h1 class="font-bold text-4xl ml-8 text-VeryDarkBlue">Shortly</h1>
         <div class="hamburger w-8 h-8 ml-auto mt-4 mr-6 space-y-2">
@@ -17,14 +17,15 @@
             <div class="hamburger-line h-1 w-7 bg-GrayishViolet"></div>
         </div>
     </header>
-
-    <img class="ml-8 mt-8" src="images/illustration-working.svg" alt="hero svg">
+    <div class="">
+        <img class="mt-8 -mr-4" src="images/illustration-working.svg" alt="hero svg">
+    </div>
 
     <div class="mt-10 text-center w-90 m-auto mb-20">
         <h1 class="text-4xl font-extrabold text-VeryDarkBlue leading-tight">More than just <br> shorter links</h1>
         <p class="text-Gray text-sm font-bold mt-4">Build your brand’s recognition and get detailed insights on how your
             links are performing.</p>
-        <button class="btn rounded-full mt-8">Get Started</button>
+        <button class="btn rounded-full focus:outline-none  mt-8">Get Started</button>
     </div>
 
     <!-- input link section -->
@@ -32,7 +33,7 @@
         <div class="url_svg flex flex-col rounded-lg py-5 w-85 px-4 items-center m-auto bg-DarkViolet">
             <input class="text-gray-800 px-3 py-3 w-11/12 rounded-md" type="url" name="" id=""
                 placeholder="shorten a link here">
-            <button class="btn w-11/12 px-3 py-3 mt-4 rounded-md">Shorten it!</button>
+            <button class="btn w-11/12 px-3 py-3 mt-4 focus:outline-none rounded-md">Shorten it!</button>
         </div>
     </div>
     <section class="bg-Grayish relative text-center pb-24">
@@ -43,23 +44,36 @@
         </div>
 
 
-        <div class="flex flex-col space-y-24 mt-24">
-            <div class="record">
+        <div class="flex flex-col space-y-32 mt-24">
+            <div class="record relative">
+                <div class="imgdit relative z-10 p-6 bg-DarkViolet w-24 m-auto rounded-full flex"><img
+                        class="justify-center my-1 mx-auto" src="images/icon-brand-recognition.svg"
+                        alt="brand reccognition svg"></div>
                 <h3 class="record-heading">Brand Recognition</h3>
-                <p class="text-GrayishViolet">Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.</p>
+                <p class="text-GrayishViolet">Boost your brand recognition with each click. Generic links don’t mean a
+                    thing. Branded links help instil confidence in your content.</p>
             </div>
-            <div class="record">
+
+            <div class="record relative ">
+                <div class="imgdit relative z-10 p-6 bg-DarkViolet w-24 m-auto rounded-full flex"><img
+                        class="justify-center my-1 mx-auto" src="images/icon-detailed-records.svg"
+                        alt="detailed-records.svg"></div>
                 <h3 class="record-heading">Detailed Records</h3>
-                <p class="text-GrayishViolet">Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+                <p class="text-GrayishViolet">Gain insights into who is clicking your links. Knowing when and where
+                    people engage with your content helps inform better decisions.</p>
             </div>
-            <div class="record">
+            <div class="record relative">
+                <div class="imgdit relative z-10 p-6 bg-DarkViolet w-24 m-auto rounded-full flex"><img
+                        class="justify-center my-1 mx-auto" src="images/icon-fully-customizable.svg"
+                        alt="fully-customizable.svg"></div>
                 <h3 class="record-heading">Fully Customizable</h3>
-                <p class="text-GrayishViolet">Improve brand awareness and content discoverability through customizable links, supercharging audience engagement. </p>
+                <p class="text-GrayishViolet">Improve brand awareness and content discoverability through customizable
+                    links, supercharging audience engagement. </p>
             </div>
         </div>
     </section>
 
-    
+
 
 
 

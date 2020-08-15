@@ -17,9 +17,20 @@ module.exports = {
         72: "20rem",
         90: "90%",
         85: "85%",
-      }
+      },
+    },
+    inset: {
+      "-2": "-9rem",
     },
   },
-  variants: {},
+  variants: {
+    outline: ["responsive", "focus"],
+    zIndex: ["responsive"],
+    backgroundColor: ["responsive", "hover", "focus", "active"],
+    position: ["responsive"],
+    margin: ["responsive", "hover", "focus"],
+    inset: ["responsive", "hover", "focus"],
+  },
+
   plugins: [],
 };
