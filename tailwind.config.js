@@ -20,7 +20,7 @@ module.exports = {
       },
     },
     inset: {
-      "-2": "-9rem",
+      "50": "49%",
     },
   },
   variants: {
@@ -30,6 +30,7 @@ module.exports = {
     position: ["responsive"],
     margin: ["responsive", "hover", "focus"],
     inset: ["responsive", "hover", "focus"],
+    fontSize: ["responsive", "hover", "focus"],
   },
 
   plugins: [],

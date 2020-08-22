@@ -1,30 +1,82 @@
 @tailwind base;
 @tailwind components;
 
-.btn{
-    @apply px-10 py-2 text-white bg-Cyan outline-none;
+/* hamburger scetion */
+.hamburger {
+  position: absolute;
+  right: 35px;
+  top: 16px;
+  cursor: pointer;
+  z-index: 3;
+  transition: all 0.7s ease-out;
+
+  .hamburger-line {
+    width: 28px;
+    height: 3px;
+    background-color: #9f9ba8;
+    margin-top: 0.3em;
+    transition: all 0.7s ease-out;
+  }
+
+  &.change {
+    transform: rotate(180deg);
+
+    .hamburger-line {
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+      }
+    }
+  }
+}
+.show {
+  transition: all 1s ease-out;
 }
 
-
-.url_svg{
-    background: url(images/bg-shorten-mobile.svg);
-    right: 0;
-    object-position: right;
-    background-repeat: no-repeat;
-    width: 100%;
-    
+.btn {
+  @apply px-10 py-2 text-white bg-Cyan outline-none;
 }
 
-.record{
-    @apply px-4 pb-7 w-11/12 m-auto bg-white rounded-md;
-
+.url_svg {
+  background: url(/build/images/bg-shorten-mobile.svg);
+  background-repeat: no-repeat;
+  width: 100%;
 }
-.record-heading{
+
+.record {
+  @apply px-4 pb-7 w-11/12 m-auto bg-white rounded-md;
+
+  .record-heading {
     @apply text-2xl font-bold text-VeryDarkBlue mb-6;
+  }
 }
 
-.imgdit{
-    top:-3em;
+.imgdit {
+  top: -3em;
+}
+.gt_svg {
+  background: url(/build/images/bg-boost-mobile.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.nav {
+  right: 50%;
+  top: 5em;
+  left: 50%;
+  transform: translate(-50%, 14%);
+}
+.text-big {
+  font-size: 3rem;
+  letter-spacing: -.2rem;
+}
+.long-line{
+  left: 50%;
+  transform: translateX(-50%)
 }
 
 @tailwind utilities;

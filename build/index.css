@@ -618,7 +618,46 @@ video {
   }
 }
 
-.btn{
+/* hamburger scetion */
+
+.hamburger {
+  position: absolute;
+  right: 35px;
+  top: 16px;
+  cursor: pointer;
+  z-index: 3;
+  transition: all 0.7s ease-out;
+}
+
+.hamburger .hamburger-line {
+    width: 28px;
+    height: 3px;
+    background-color: #9f9ba8;
+    margin-top: 0.3em;
+    transition: all 0.7s ease-out;
+  }
+
+.hamburger.change {
+    transform: rotate(180deg);
+  }
+
+.hamburger.change .hamburger-line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+.hamburger.change .hamburger-line:nth-child(2) {
+        opacity: 0;
+      }
+
+.hamburger.change .hamburger-line:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+      }
+
+.show {
+  transition: all 1s ease-out;
+}
+
+.btn {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   padding-top: 0.5rem;
@@ -632,16 +671,13 @@ video {
   outline: 0;
 }
 
-.url_svg{
-  background: url(images/bg-shorten-mobile.svg);
-  right: 0;
-  -o-object-position: right;
-     object-position: right;
+.url_svg {
+  background: url(/build/images/bg-shorten-mobile.svg);
   background-repeat: no-repeat;
   width: 100%;
 }
 
-.record{
+.record {
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 2rem;
@@ -653,17 +689,40 @@ video {
   border-radius: 0.375rem;
 }
 
-.record-heading{
-  font-size: 1.5rem;
-  font-weight: 700;
-  --text-opacity: 1;
-  color: hsl(255, 11%, 22%);
-  color: rgba(53.0145, 49.928999999999995, 62.27100000000001, var(--text-opacity));
-  margin-bottom: 1.5rem;
+.record .record-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    --text-opacity: 1;
+    color: hsl(255, 11%, 22%);
+    color: rgba(53.0145, 49.928999999999995, 62.27100000000001, var(--text-opacity));
+    margin-bottom: 1.5rem;
+  }
+
+.imgdit {
+  top: -3em;
 }
 
-.imgdit{
-  top:-3em;
+.gt_svg {
+  background: url(/build/images/bg-boost-mobile.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.nav {
+  right: 50%;
+  top: 5em;
+  left: 50%;
+  transform: translate(-50%, 14%);
+}
+
+.text-big {
+  font-size: 3rem;
+  letter-spacing: -.2rem;
+}
+
+.long-line{
+  left: 50%;
+  transform: translateX(-50%)
 }
 
 .space-y-0 > :not(template) ~ :not(template) {
@@ -7381,6 +7440,86 @@ video {
 }
 
 .text-6xl {
+  font-size: 4rem;
+}
+
+.hover\:text-xs:hover {
+  font-size: 0.75rem;
+}
+
+.hover\:text-sm:hover {
+  font-size: 0.875rem;
+}
+
+.hover\:text-base:hover {
+  font-size: 1rem;
+}
+
+.hover\:text-lg:hover {
+  font-size: 1.125rem;
+}
+
+.hover\:text-xl:hover {
+  font-size: 1.25rem;
+}
+
+.hover\:text-2xl:hover {
+  font-size: 1.5rem;
+}
+
+.hover\:text-3xl:hover {
+  font-size: 1.875rem;
+}
+
+.hover\:text-4xl:hover {
+  font-size: 2.25rem;
+}
+
+.hover\:text-5xl:hover {
+  font-size: 3rem;
+}
+
+.hover\:text-6xl:hover {
+  font-size: 4rem;
+}
+
+.focus\:text-xs:focus {
+  font-size: 0.75rem;
+}
+
+.focus\:text-sm:focus {
+  font-size: 0.875rem;
+}
+
+.focus\:text-base:focus {
+  font-size: 1rem;
+}
+
+.focus\:text-lg:focus {
+  font-size: 1.125rem;
+}
+
+.focus\:text-xl:focus {
+  font-size: 1.25rem;
+}
+
+.focus\:text-2xl:focus {
+  font-size: 1.5rem;
+}
+
+.focus\:text-3xl:focus {
+  font-size: 1.875rem;
+}
+
+.focus\:text-4xl:focus {
+  font-size: 2.25rem;
+}
+
+.focus\:text-5xl:focus {
+  font-size: 3rem;
+}
+
+.focus\:text-6xl:focus {
   font-size: 4rem;
 }
 
@@ -17652,103 +17791,103 @@ video {
   position: sticky;
 }
 
-.-inset-2 {
-  top: -9rem;
-  right: -9rem;
-  bottom: -9rem;
-  left: -9rem;
+.inset-50 {
+  top: 49%;
+  right: 49%;
+  bottom: 49%;
+  left: 49%;
 }
 
-.-inset-y-2 {
-  top: -9rem;
-  bottom: -9rem;
+.inset-y-50 {
+  top: 49%;
+  bottom: 49%;
 }
 
-.-inset-x-2 {
-  right: -9rem;
-  left: -9rem;
+.inset-x-50 {
+  right: 49%;
+  left: 49%;
 }
 
-.-top-2 {
-  top: -9rem;
+.top-50 {
+  top: 49%;
 }
 
-.-right-2 {
-  right: -9rem;
+.right-50 {
+  right: 49%;
 }
 
-.-bottom-2 {
-  bottom: -9rem;
+.bottom-50 {
+  bottom: 49%;
 }
 
-.-left-2 {
-  left: -9rem;
+.left-50 {
+  left: 49%;
 }
 
-.hover\:-inset-2:hover {
-  top: -9rem;
-  right: -9rem;
-  bottom: -9rem;
-  left: -9rem;
+.hover\:inset-50:hover {
+  top: 49%;
+  right: 49%;
+  bottom: 49%;
+  left: 49%;
 }
 
-.hover\:-inset-y-2:hover {
-  top: -9rem;
-  bottom: -9rem;
+.hover\:inset-y-50:hover {
+  top: 49%;
+  bottom: 49%;
 }
 
-.hover\:-inset-x-2:hover {
-  right: -9rem;
-  left: -9rem;
+.hover\:inset-x-50:hover {
+  right: 49%;
+  left: 49%;
 }
 
-.hover\:-top-2:hover {
-  top: -9rem;
+.hover\:top-50:hover {
+  top: 49%;
 }
 
-.hover\:-right-2:hover {
-  right: -9rem;
+.hover\:right-50:hover {
+  right: 49%;
 }
 
-.hover\:-bottom-2:hover {
-  bottom: -9rem;
+.hover\:bottom-50:hover {
+  bottom: 49%;
 }
 
-.hover\:-left-2:hover {
-  left: -9rem;
+.hover\:left-50:hover {
+  left: 49%;
 }
 
-.focus\:-inset-2:focus {
-  top: -9rem;
-  right: -9rem;
-  bottom: -9rem;
-  left: -9rem;
+.focus\:inset-50:focus {
+  top: 49%;
+  right: 49%;
+  bottom: 49%;
+  left: 49%;
 }
 
-.focus\:-inset-y-2:focus {
-  top: -9rem;
-  bottom: -9rem;
+.focus\:inset-y-50:focus {
+  top: 49%;
+  bottom: 49%;
 }
 
-.focus\:-inset-x-2:focus {
-  right: -9rem;
-  left: -9rem;
+.focus\:inset-x-50:focus {
+  right: 49%;
+  left: 49%;
 }
 
-.focus\:-top-2:focus {
-  top: -9rem;
+.focus\:top-50:focus {
+  top: 49%;
 }
 
-.focus\:-right-2:focus {
-  right: -9rem;
+.focus\:right-50:focus {
+  right: 49%;
 }
 
-.focus\:-bottom-2:focus {
-  bottom: -9rem;
+.focus\:bottom-50:focus {
+  bottom: 49%;
 }
 
-.focus\:-left-2:focus {
-  left: -9rem;
+.focus\:left-50:focus {
+  left: 49%;
 }
 
 .resize-none {
@@ -29799,6 +29938,86 @@ video {
     font-size: 4rem;
   }
 
+  .sm\:hover\:text-xs:hover {
+    font-size: 0.75rem;
+  }
+
+  .sm\:hover\:text-sm:hover {
+    font-size: 0.875rem;
+  }
+
+  .sm\:hover\:text-base:hover {
+    font-size: 1rem;
+  }
+
+  .sm\:hover\:text-lg:hover {
+    font-size: 1.125rem;
+  }
+
+  .sm\:hover\:text-xl:hover {
+    font-size: 1.25rem;
+  }
+
+  .sm\:hover\:text-2xl:hover {
+    font-size: 1.5rem;
+  }
+
+  .sm\:hover\:text-3xl:hover {
+    font-size: 1.875rem;
+  }
+
+  .sm\:hover\:text-4xl:hover {
+    font-size: 2.25rem;
+  }
+
+  .sm\:hover\:text-5xl:hover {
+    font-size: 3rem;
+  }
+
+  .sm\:hover\:text-6xl:hover {
+    font-size: 4rem;
+  }
+
+  .sm\:focus\:text-xs:focus {
+    font-size: 0.75rem;
+  }
+
+  .sm\:focus\:text-sm:focus {
+    font-size: 0.875rem;
+  }
+
+  .sm\:focus\:text-base:focus {
+    font-size: 1rem;
+  }
+
+  .sm\:focus\:text-lg:focus {
+    font-size: 1.125rem;
+  }
+
+  .sm\:focus\:text-xl:focus {
+    font-size: 1.25rem;
+  }
+
+  .sm\:focus\:text-2xl:focus {
+    font-size: 1.5rem;
+  }
+
+  .sm\:focus\:text-3xl:focus {
+    font-size: 1.875rem;
+  }
+
+  .sm\:focus\:text-4xl:focus {
+    font-size: 2.25rem;
+  }
+
+  .sm\:focus\:text-5xl:focus {
+    font-size: 3rem;
+  }
+
+  .sm\:focus\:text-6xl:focus {
+    font-size: 4rem;
+  }
+
   .sm\:leading-3 {
     line-height: .75rem;
   }
@@ -40067,103 +40286,103 @@ video {
     position: sticky;
   }
 
-  .sm\:-inset-2 {
-    top: -9rem;
-    right: -9rem;
-    bottom: -9rem;
-    left: -9rem;
+  .sm\:inset-50 {
+    top: 49%;
+    right: 49%;
+    bottom: 49%;
+    left: 49%;
   }
 
-  .sm\:-inset-y-2 {
-    top: -9rem;
-    bottom: -9rem;
+  .sm\:inset-y-50 {
+    top: 49%;
+    bottom: 49%;
   }
 
-  .sm\:-inset-x-2 {
-    right: -9rem;
-    left: -9rem;
+  .sm\:inset-x-50 {
+    right: 49%;
+    left: 49%;
   }
 
-  .sm\:-top-2 {
-    top: -9rem;
+  .sm\:top-50 {
+    top: 49%;
   }
 
-  .sm\:-right-2 {
-    right: -9rem;
+  .sm\:right-50 {
+    right: 49%;
   }
 
-  .sm\:-bottom-2 {
-    bottom: -9rem;
+  .sm\:bottom-50 {
+    bottom: 49%;
   }
 
-  .sm\:-left-2 {
-    left: -9rem;
+  .sm\:left-50 {
+    left: 49%;
   }
 
-  .sm\:hover\:-inset-2:hover {
-    top: -9rem;
-    right: -9rem;
-    bottom: -9rem;
-    left: -9rem;
+  .sm\:hover\:inset-50:hover {
+    top: 49%;
+    right: 49%;
+    bottom: 49%;
+    left: 49%;
   }
 
-  .sm\:hover\:-inset-y-2:hover {
-    top: -9rem;
-    bottom: -9rem;
+  .sm\:hover\:inset-y-50:hover {
+    top: 49%;
+    bottom: 49%;
   }
 
-  .sm\:hover\:-inset-x-2:hover {
-    right: -9rem;
-    left: -9rem;
+  .sm\:hover\:inset-x-50:hover {
+    right: 49%;
+    left: 49%;
   }
 
-  .sm\:hover\:-top-2:hover {
-    top: -9rem;
+  .sm\:hover\:top-50:hover {
+    top: 49%;
   }
 
-  .sm\:hover\:-right-2:hover {
-    right: -9rem;
+  .sm\:hover\:right-50:hover {
+    right: 49%;
   }
 
-  .sm\:hover\:-bottom-2:hover {
-    bottom: -9rem;
+  .sm\:hover\:bottom-50:hover {
+    bottom: 49%;
   }
 
-  .sm\:hover\:-left-2:hover {
-    left: -9rem;
+  .sm\:hover\:left-50:hover {
+    left: 49%;
   }
 
-  .sm\:focus\:-inset-2:focus {
-    top: -9rem;
-    right: -9rem;
-    bottom: -9rem;
-    left: -9rem;
+  .sm\:focus\:inset-50:focus {
+    top: 49%;
+    right: 49%;
+    bottom: 49%;
+    left: 49%;
   }
 
-  .sm\:focus\:-inset-y-2:focus {
-    top: -9rem;
-    bottom: -9rem;
+  .sm\:focus\:inset-y-50:focus {
+    top: 49%;
+    bottom: 49%;
   }
 
-  .sm\:focus\:-inset-x-2:focus {
-    right: -9rem;
-    left: -9rem;
+  .sm\:focus\:inset-x-50:focus {
+    right: 49%;
+    left: 49%;
   }
 
-  .sm\:focus\:-top-2:focus {
-    top: -9rem;
+  .sm\:focus\:top-50:focus {
+    top: 49%;
   }
 
-  .sm\:focus\:-right-2:focus {
-    right: -9rem;
+  .sm\:focus\:right-50:focus {
+    right: 49%;
   }
 
-  .sm\:focus\:-bottom-2:focus {
-    bottom: -9rem;
+  .sm\:focus\:bottom-50:focus {
+    bottom: 49%;
   }
 
-  .sm\:focus\:-left-2:focus {
-    left: -9rem;
+  .sm\:focus\:left-50:focus {
+    left: 49%;
   }
 
   .sm\:resize-none {
@@ -52123,6 +52342,86 @@ video {
     font-size: 4rem;
   }
 
+  .md\:hover\:text-xs:hover {
+    font-size: 0.75rem;
+  }
+
+  .md\:hover\:text-sm:hover {
+    font-size: 0.875rem;
+  }
+
+  .md\:hover\:text-base:hover {
+    font-size: 1rem;
+  }
+
+  .md\:hover\:text-lg:hover {
+    font-size: 1.125rem;
+  }
+
+  .md\:hover\:text-xl:hover {
+    font-size: 1.25rem;
+  }
+
+  .md\:hover\:text-2xl:hover {
+    font-size: 1.5rem;
+  }
+
+  .md\:hover\:text-3xl:hover {
+    font-size: 1.875rem;
+  }
+
+  .md\:hover\:text-4xl:hover {
+    font-size: 2.25rem;
+  }
+
+  .md\:hover\:text-5xl:hover {
+    font-size: 3rem;
+  }
+
+  .md\:hover\:text-6xl:hover {
+    font-size: 4rem;
+  }
+
+  .md\:focus\:text-xs:focus {
+    font-size: 0.75rem;
+  }
+
+  .md\:focus\:text-sm:focus {
+    font-size: 0.875rem;
+  }
+
+  .md\:focus\:text-base:focus {
+    font-size: 1rem;
+  }
+
+  .md\:focus\:text-lg:focus {
+    font-size: 1.125rem;
+  }
+
+  .md\:focus\:text-xl:focus {
+    font-size: 1.25rem;
+  }
+
+  .md\:focus\:text-2xl:focus {
+    font-size: 1.5rem;
+  }
+
+  .md\:focus\:text-3xl:focus {
+    font-size: 1.875rem;
+  }
+
+  .md\:focus\:text-4xl:focus {
+    font-size: 2.25rem;
+  }
+
+  .md\:focus\:text-5xl:focus {
+    font-size: 3rem;
+  }
+
+  .md\:focus\:text-6xl:focus {
+    font-size: 4rem;
+  }
+
   .md\:leading-3 {
     line-height: .75rem;
   }
@@ -62391,103 +62690,103 @@ video {
     position: sticky;
   }
 
-  .md\:-inset-2 {
-    top: -9rem;
-    right: -9rem;
-    bottom: -9rem;
-    left: -9rem;
+  .md\:inset-50 {
+    top: 49%;
+    right: 49%;
+    bottom: 49%;
+    left: 49%;
   }
 
-  .md\:-inset-y-2 {
-    top: -9rem;
-    bottom: -9rem;
+  .md\:inset-y-50 {
+    top: 49%;
+    bottom: 49%;
   }
 
-  .md\:-inset-x-2 {
-    right: -9rem;
-    left: -9rem;
+  .md\:inset-x-50 {
+    right: 49%;
+    left: 49%;
   }
 
-  .md\:-top-2 {
-    top: -9rem;
+  .md\:top-50 {
+    top: 49%;
   }
 
-  .md\:-right-2 {
-    right: -9rem;
+  .md\:right-50 {
+    right: 49%;
   }
 
-  .md\:-bottom-2 {
-    bottom: -9rem;
+  .md\:bottom-50 {
+    bottom: 49%;
   }
 
-  .md\:-left-2 {
-    left: -9rem;
+  .md\:left-50 {
+    left: 49%;
   }
 
-  .md\:hover\:-inset-2:hover {
-    top: -9rem;
-    right: -9rem;
-    bottom: -9rem;
-    left: -9rem;
+  .md\:hover\:inset-50:hover {
+    top: 49%;
+    right: 49%;
+    bottom: 49%;
+    left: 49%;
   }
 
-  .md\:hover\:-inset-y-2:hover {
-    top: -9rem;
-    bottom: -9rem;
+  .md\:hover\:inset-y-50:hover {
+    top: 49%;
+    bottom: 49%;
   }
 
-  .md\:hover\:-inset-x-2:hover {
-    right: -9rem;
-    left: -9rem;
+  .md\:hover\:inset-x-50:hover {
+    right: 49%;
+    left: 49%;
   }
 
-  .md\:hover\:-top-2:hover {
-    top: -9rem;
+  .md\:hover\:top-50:hover {
+    top: 49%;
   }
 
-  .md\:hover\:-right-2:hover {
-    right: -9rem;
+  .md\:hover\:right-50:hover {
+    right: 49%;
   }
 
-  .md\:hover\:-bottom-2:hover {
-    bottom: -9rem;
+  .md\:hover\:bottom-50:hover {
+    bottom: 49%;
   }
 
-  .md\:hover\:-left-2:hover {
-    left: -9rem;
+  .md\:hover\:left-50:hover {
+    left: 49%;
   }
 
-  .md\:focus\:-inset-2:focus {
-    top: -9rem;
-    right: -9rem;
-    bottom: -9rem;
-    left: -9rem;
+  .md\:focus\:inset-50:focus {
+    top: 49%;
+    right: 49%;
+    bottom: 49%;
+    left: 49%;
   }
 
-  .md\:focus\:-inset-y-2:focus {
-    top: -9rem;
-    bottom: -9rem;
+  .md\:focus\:inset-y-50:focus {
+    top: 49%;
+    bottom: 49%;
   }
 
-  .md\:focus\:-inset-x-2:focus {
-    right: -9rem;
-    left: -9rem;
+  .md\:focus\:inset-x-50:focus {
+    right: 49%;
+    left: 49%;
   }
 
-  .md\:focus\:-top-2:focus {
-    top: -9rem;
+  .md\:focus\:top-50:focus {
+    top: 49%;
   }
 
-  .md\:focus\:-right-2:focus {
-    right: -9rem;
+  .md\:focus\:right-50:focus {
+    right: 49%;
   }
 
-  .md\:focus\:-bottom-2:focus {
-    bottom: -9rem;
+  .md\:focus\:bottom-50:focus {
+    bottom: 49%;
   }
 
-  .md\:focus\:-left-2:focus {
-    left: -9rem;
+  .md\:focus\:left-50:focus {
+    left: 49%;
   }
 
   .md\:resize-none {
@@ -74447,6 +74746,86 @@ video {
     font-size: 4rem;
   }
 
+  .lg\:hover\:text-xs:hover {
+    font-size: 0.75rem;
+  }
+
+  .lg\:hover\:text-sm:hover {
+    font-size: 0.875rem;
+  }
+
+  .lg\:hover\:text-base:hover {
+    font-size: 1rem;
+  }
+
+  .lg\:hover\:text-lg:hover {
+    font-size: 1.125rem;
+  }
+
+  .lg\:hover\:text-xl:hover {
+    font-size: 1.25rem;
+  }
+
+  .lg\:hover\:text-2xl:hover {
+    font-size: 1.5rem;
+  }
+
+  .lg\:hover\:text-3xl:hover {
+    font-size: 1.875rem;
+  }
+
+  .lg\:hover\:text-4xl:hover {
+    font-size: 2.25rem;
+  }
+
+  .lg\:hover\:text-5xl:hover {
+    font-size: 3rem;
+  }
+
+  .lg\:hover\:text-6xl:hover {
+    font-size: 4rem;
+  }
+
+  .lg\:focus\:text-xs:focus {
+    font-size: 0.75rem;
+  }
+
+  .lg\:focus\:text-sm:focus {
+    font-size: 0.875rem;
+  }
+
+  .lg\:focus\:text-base:focus {
+    font-size: 1rem;
+  }
+
+  .lg\:focus\:text-lg:focus {
+    font-size: 1.125rem;
+  }
+
+  .lg\:focus\:text-xl:focus {
+    font-size: 1.25rem;
+  }
+
+  .lg\:focus\:text-2xl:focus {
+    font-size: 1.5rem;
+  }
+
+  .lg\:focus\:text-3xl:focus {
+    font-size: 1.875rem;
+  }
+
+  .lg\:focus\:text-4xl:focus {
+    font-size: 2.25rem;
+  }
+
+  .lg\:focus\:text-5xl:focus {
+    font-size: 3rem;
+  }
+
+  .lg\:focus\:text-6xl:focus {
+    font-size: 4rem;
+  }
+
   .lg\:leading-3 {
     line-height: .75rem;
   }
@@ -84715,103 +85094,103 @@ video {
     position: sticky;
   }
 
-  .lg\:-inset-2 {
-    top: -9rem;
-    right: -9rem;
-    bottom: -9rem;
-    left: -9rem;
+  .lg\:inset-50 {
+    top: 49%;
+    right: 49%;
+    bottom: 49%;
+    left: 49%;
   }
 
-  .lg\:-inset-y-2 {
-    top: -9rem;
-    bottom: -9rem;
+  .lg\:inset-y-50 {
+    top: 49%;
+    bottom: 49%;
   }
 
-  .lg\:-inset-x-2 {
-    right: -9rem;
-    left: -9rem;
+  .lg\:inset-x-50 {
+    right: 49%;
+    left: 49%;
   }
 
-  .lg\:-top-2 {
-    top: -9rem;
+  .lg\:top-50 {
+    top: 49%;
   }
 
-  .lg\:-right-2 {
-    right: -9rem;
+  .lg\:right-50 {
+    right: 49%;
   }
 
-  .lg\:-bottom-2 {
-    bottom: -9rem;
+  .lg\:bottom-50 {
+    bottom: 49%;
   }
 
-  .lg\:-left-2 {
-    left: -9rem;
+  .lg\:left-50 {
+    left: 49%;
   }
 
-  .lg\:hover\:-inset-2:hover {
-    top: -9rem;
-    right: -9rem;
-    bottom: -9rem;
-    left: -9rem;
+  .lg\:hover\:inset-50:hover {
+    top: 49%;
+    right: 49%;
+    bottom: 49%;
+    left: 49%;
   }
 
-  .lg\:hover\:-inset-y-2:hover {
-    top: -9rem;
-    bottom: -9rem;
+  .lg\:hover\:inset-y-50:hover {
+    top: 49%;
+    bottom: 49%;
   }
 
-  .lg\:hover\:-inset-x-2:hover {
-    right: -9rem;
-    left: -9rem;
+  .lg\:hover\:inset-x-50:hover {
+    right: 49%;
+    left: 49%;
   }
 
-  .lg\:hover\:-top-2:hover {
-    top: -9rem;
+  .lg\:hover\:top-50:hover {
+    top: 49%;
   }
 
-  .lg\:hover\:-right-2:hover {
-    right: -9rem;
+  .lg\:hover\:right-50:hover {
+    right: 49%;
   }
 
-  .lg\:hover\:-bottom-2:hover {
-    bottom: -9rem;
+  .lg\:hover\:bottom-50:hover {
+    bottom: 49%;
   }
 
-  .lg\:hover\:-left-2:hover {
-    left: -9rem;
+  .lg\:hover\:left-50:hover {
+    left: 49%;
   }
 
-  .lg\:focus\:-inset-2:focus {
-    top: -9rem;
-    right: -9rem;
-    bottom: -9rem;
-    left: -9rem;
+  .lg\:focus\:inset-50:focus {
+    top: 49%;
+    right: 49%;
+    bottom: 49%;
+    left: 49%;
   }
 
-  .lg\:focus\:-inset-y-2:focus {
-    top: -9rem;
-    bottom: -9rem;
+  .lg\:focus\:inset-y-50:focus {
+    top: 49%;
+    bottom: 49%;
   }
 
-  .lg\:focus\:-inset-x-2:focus {
-    right: -9rem;
-    left: -9rem;
+  .lg\:focus\:inset-x-50:focus {
+    right: 49%;
+    left: 49%;
   }
 
-  .lg\:focus\:-top-2:focus {
-    top: -9rem;
+  .lg\:focus\:top-50:focus {
+    top: 49%;
   }
 
-  .lg\:focus\:-right-2:focus {
-    right: -9rem;
+  .lg\:focus\:right-50:focus {
+    right: 49%;
   }
 
-  .lg\:focus\:-bottom-2:focus {
-    bottom: -9rem;
+  .lg\:focus\:bottom-50:focus {
+    bottom: 49%;
   }
 
-  .lg\:focus\:-left-2:focus {
-    left: -9rem;
+  .lg\:focus\:left-50:focus {
+    left: 49%;
   }
 
   .lg\:resize-none {
@@ -96771,6 +97150,86 @@ video {
     font-size: 4rem;
   }
 
+  .xl\:hover\:text-xs:hover {
+    font-size: 0.75rem;
+  }
+
+  .xl\:hover\:text-sm:hover {
+    font-size: 0.875rem;
+  }
+
+  .xl\:hover\:text-base:hover {
+    font-size: 1rem;
+  }
+
+  .xl\:hover\:text-lg:hover {
+    font-size: 1.125rem;
+  }
+
+  .xl\:hover\:text-xl:hover {
+    font-size: 1.25rem;
+  }
+
+  .xl\:hover\:text-2xl:hover {
+    font-size: 1.5rem;
+  }
+
+  .xl\:hover\:text-3xl:hover {
+    font-size: 1.875rem;
+  }
+
+  .xl\:hover\:text-4xl:hover {
+    font-size: 2.25rem;
+  }
+
+  .xl\:hover\:text-5xl:hover {
+    font-size: 3rem;
+  }
+
+  .xl\:hover\:text-6xl:hover {
+    font-size: 4rem;
+  }
+
+  .xl\:focus\:text-xs:focus {
+    font-size: 0.75rem;
+  }
+
+  .xl\:focus\:text-sm:focus {
+    font-size: 0.875rem;
+  }
+
+  .xl\:focus\:text-base:focus {
+    font-size: 1rem;
+  }
+
+  .xl\:focus\:text-lg:focus {
+    font-size: 1.125rem;
+  }
+
+  .xl\:focus\:text-xl:focus {
+    font-size: 1.25rem;
+  }
+
+  .xl\:focus\:text-2xl:focus {
+    font-size: 1.5rem;
+  }
+
+  .xl\:focus\:text-3xl:focus {
+    font-size: 1.875rem;
+  }
+
+  .xl\:focus\:text-4xl:focus {
+    font-size: 2.25rem;
+  }
+
+  .xl\:focus\:text-5xl:focus {
+    font-size: 3rem;
+  }
+
+  .xl\:focus\:text-6xl:focus {
+    font-size: 4rem;
+  }
+
   .xl\:leading-3 {
     line-height: .75rem;
   }
@@ -107039,103 +107498,103 @@ video {
     position: sticky;
   }
 
-  .xl\:-inset-2 {
-    top: -9rem;
-    right: -9rem;
-    bottom: -9rem;
-    left: -9rem;
+  .xl\:inset-50 {
+    top: 49%;
+    right: 49%;
+    bottom: 49%;
+    left: 49%;
   }
 
-  .xl\:-inset-y-2 {
-    top: -9rem;
-    bottom: -9rem;
+  .xl\:inset-y-50 {
+    top: 49%;
+    bottom: 49%;
   }
 
-  .xl\:-inset-x-2 {
-    right: -9rem;
-    left: -9rem;
+  .xl\:inset-x-50 {
+    right: 49%;
+    left: 49%;
   }
 
-  .xl\:-top-2 {
-    top: -9rem;
+  .xl\:top-50 {
+    top: 49%;
   }
 
-  .xl\:-right-2 {
-    right: -9rem;
+  .xl\:right-50 {
+    right: 49%;
   }
 
-  .xl\:-bottom-2 {
-    bottom: -9rem;
+  .xl\:bottom-50 {
+    bottom: 49%;
   }
 
-  .xl\:-left-2 {
-    left: -9rem;
+  .xl\:left-50 {
+    left: 49%;
   }
 
-  .xl\:hover\:-inset-2:hover {
-    top: -9rem;
-    right: -9rem;
-    bottom: -9rem;
-    left: -9rem;
+  .xl\:hover\:inset-50:hover {
+    top: 49%;
+    right: 49%;
+    bottom: 49%;
+    left: 49%;
   }
 
-  .xl\:hover\:-inset-y-2:hover {
-    top: -9rem;
-    bottom: -9rem;
+  .xl\:hover\:inset-y-50:hover {
+    top: 49%;
+    bottom: 49%;
   }
 
-  .xl\:hover\:-inset-x-2:hover {
-    right: -9rem;
-    left: -9rem;
+  .xl\:hover\:inset-x-50:hover {
+    right: 49%;
+    left: 49%;
   }
 
-  .xl\:hover\:-top-2:hover {
-    top: -9rem;
+  .xl\:hover\:top-50:hover {
+    top: 49%;
   }
 
-  .xl\:hover\:-right-2:hover {
-    right: -9rem;
+  .xl\:hover\:right-50:hover {
+    right: 49%;
   }
 
-  .xl\:hover\:-bottom-2:hover {
-    bottom: -9rem;
+  .xl\:hover\:bottom-50:hover {
+    bottom: 49%;
   }
 
-  .xl\:hover\:-left-2:hover {
-    left: -9rem;
+  .xl\:hover\:left-50:hover {
+    left: 49%;
   }
 
-  .xl\:focus\:-inset-2:focus {
-    top: -9rem;
-    right: -9rem;
-    bottom: -9rem;
-    left: -9rem;
+  .xl\:focus\:inset-50:focus {
+    top: 49%;
+    right: 49%;
+    bottom: 49%;
+    left: 49%;
   }
 
-  .xl\:focus\:-inset-y-2:focus {
-    top: -9rem;
-    bottom: -9rem;
+  .xl\:focus\:inset-y-50:focus {
+    top: 49%;
+    bottom: 49%;
   }
 
-  .xl\:focus\:-inset-x-2:focus {
-    right: -9rem;
-    left: -9rem;
+  .xl\:focus\:inset-x-50:focus {
+    right: 49%;
+    left: 49%;
   }
 
-  .xl\:focus\:-top-2:focus {
-    top: -9rem;
+  .xl\:focus\:top-50:focus {
+    top: 49%;
   }
 
-  .xl\:focus\:-right-2:focus {
-    right: -9rem;
+  .xl\:focus\:right-50:focus {
+    right: 49%;
   }
 
-  .xl\:focus\:-bottom-2:focus {
-    bottom: -9rem;
+  .xl\:focus\:bottom-50:focus {
+    bottom: 49%;
   }
 
-  .xl\:focus\:-left-2:focus {
-    left: -9rem;
+  .xl\:focus\:left-50:focus {
+    left: 49%;
   }
 
   .xl\:resize-none {
