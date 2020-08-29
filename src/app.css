@@ -65,6 +65,7 @@
   width: 100%;
 }
 .nav {
+  position: fixed;
   right: 50%;
   top: 5em;
   left: 50%;
@@ -77,6 +78,11 @@
 .long-line{
   left: 50%;
   transform: translateX(-50%)
+}
+@screen lg {
+  .responsive-hero{
+    @apply flex flex-row-reverse w-90 m-auto my-4;
+  }
 }
 
 @tailwind utilities;

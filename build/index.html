@@ -9,52 +9,60 @@
 </head>
 
 <body class="box-border m-0 p-0 font-sans relative">
-  <header class="w-full flex mt-8">
-    <h1 class="font-bold text-4xl ml-8 text-VeryDarkBlue">Shortly</h1>
-    <div class="hamburger">
+  <header class=" flex mt-8 lg:w-80 lg:m-auto lg:mt-10 lg:items-center lg:mb-24">
+    <h1 class="font-bold text-4xl ml-8 text-VeryDarkBlue lg:text-5xl lg:m-0">Shortly</h1>
+    <div class="hamburger lg:hidden">
       <div class="hamburger-line"></div>
       <div class="hamburger-line"></div>
       <div class="hamburger-line"></div>
     </div>
-    <div class="nav hidden fixed bg-DarkViolet text-white w-85 m-auto py-10 px-6 rounded-lg flex-col items-center show">
-      <ul class="text-center space-y-4 font-semibold text-lg w-full">
+    <div
+      class=" hidden bg-DarkViolet text-white w-85 m-auto py-10 px-6 rounded-lg flex-col items-center lg:p-0 lg:items-center lg:bg-white lg:mt-4 lg:text-GrayishViolet lg:font-bold lg:flex lg:flex-row ">
+      <ul class="text-center space-y-4  font-semibold text-lg w-full lg:flex lg:space-x-4 lg:space-y-0 lg:items-baseline lg:ml-4 lg:pb-3 lg:text-xl lg:font-bold">
         <li><a href="#">Features</a></li>
         <li><a href="#">Pricing</a></li>
         <li><a href="#">Resources</a></li>
         <hr class="">
-        <li><a href="#">Login</a></li>
-        <li class="btn rounded-full focus:outline-none mt-6 px-20"><a href="#">Sign Up</a></li>
+        <li style="margin-left: auto;"><a href="#">Login</a></li>
+        <li class="btn rounded-full focus:outline-none mt-6 px-20 lg:px-4"><a href="#">Sign Up</a></li>
       </ul>
     </div>
     </div>
   </header>
-  <div class> 
+  <div class="responsive-hero xl:mb-12 lg:w-80 lg:m-auto lg:mb-10">
+    <div class="w-full h-full text-center overflow-x-hidden lg:overflow-x-visible lg:text-left">
 
-    <div class="">
-      <img class="mt-8 -mr-4" src="images/illustration-working.svg" alt="hero svg" />
+      <div class="w-140 ml-6 mt-8 lg:ml-32">
+        <img class="max-w-full h-auto" src="images/illustration-working.svg" alt="hero svg" />
+      </div>
     </div>
-  
-    <div class="mt-10 text-center w-90 m-auto mb-20">
-      <h1 class="text-big font-bold text-VeryDarkBlue leading-none">
-        More than just <br />
-        shorter links
-      </h1>
-      <p class="text-GrayishViolet text-lg font-medium mt-4">
-        Build your brand’s recognition and get detailed insights on how your
-        links are performing.
-      </p>
-      <button class="btn px-10 py-4 rounded-full font-bold focus:outline-none mt-8">
-        Get Started
-      </button>
+    <div class="mt-10 text-center max-w-80 m-auto mb-20 lg:text-left">
+
+      <div class="">
+        <h1 class="text-big font-bold text-VeryDarkBlue leading-none lg:tracking-tight lg:leading-tight lg:text-6xl ">
+          More than just <br />
+          shorter links
+        </h1>
+        <p class="text-GrayishViolet text-lg font-medium mt-4 lg:text-2xl ">
+          Build your brand’s recognition and get detailed insights on how your
+          links are performing.
+        </p>
+        <button class="btn px-10 py-4 rounded-full font-bold focus:outline-none mt-8 lg:tracking-wider lg:text-2xl">
+          Get Started
+        </button>
+      </div>
     </div>
   </div>
 
   <!-- input link section -->
   <div class="relative -mb-20 z-10">
-    <div class="url_svg flex flex-col rounded-lg py-5 w-85 px-4 items-center m-auto bg-DarkViolet">
-      <input class="text-gray-700 font-medium placeholder-gray-500 px-3 py-3 w-11/12 rounded-md focus:outline-none focus:bg-gray-100" type="url" name=""
-        id="" placeholder="shorten a link here..." />
-      <button class="btn w-11/12 px-3 py-3 mt-4 font-bold focus:outline-none rounded-md">
+    <div
+      class="url_svg flex flex-col rounded-lg py-5 w-85 px-4 items-center m-auto bg-DarkViolet lg:flex-row lg:align-middle lg:p-12 lg:w-80">
+      <input
+        class="text-gray-700 font-medium placeholder-gray-500 px-3 py-3 w-11/12 rounded-md focus:outline-none focus:bg-gray-100"
+        type="url" name="" id="" placeholder="shorten a link here..." />
+      <button
+        class="btn w-11/12 px-3 py-3 mt-4 font-bold focus:outline-none rounded-md flex-row lg:w-48 lg:ml-8 lg:mt-0">
         Shorten it!
       </button>
     </div>
