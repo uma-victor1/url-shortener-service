@@ -30,7 +30,6 @@ function URLIsValid(inputField) {
 }
 
 function Validate() {
-
   error.innerHTML = ""; // clear any error messages
 
   if (URLIsValid(inputField.value)) {
@@ -49,7 +48,7 @@ function Validate() {
   return false;
 }
 
-document.getElementById('shortenURL').addEventListener('submit', shortenLink);
+document.getElementById("shortenURL").addEventListener("submit", shortenLink);
 
 function shortenLink(event) {
   event.preventDefault();
@@ -58,12 +57,12 @@ function shortenLink(event) {
   if (Validate()) {
     // if validation is true post to api
     fetch("https://rel.ink/api/links/", {
-      method: 'POST',
+      method: "POST",
       body: JSON.stringify({
         url: inputField.value
       }),
       headers: {
-        'Content-Type': 'application/json'
+        "Content-Type": "application/json"
       }
     }).then(function (res) {
       return res.json();
@@ -118,7 +117,6 @@ function get() {
 // Display Shortened Links
 
 function showShortLinks(link, shortLink) {
-
   container.insertAdjacentHTML("afterbegin", "\n  <div class=\"item mt-4 bg-white px-6 pb-7 lg:flex text-xl text-left rounded-lg\">\n <div class=\"w-full py-4\"> <a href=\"" + link + "\" class=\"item-link\">" + link + "</a></div>\n  <hr>\n  <div class=\"w-full mt-3\"><a href=\"" + shortLink + "\" id=\"shortLink\" class=\" item-shortlink text-Cyan lg:ml-auto\">" + shortLink + "</a></div>\n  <button id=\"copy\" class=\"copy-btn w-full m-auto btn rounded-lg mt-4\">Copy</button>\n  </div>\n  ");
 }
 
@@ -145,7 +143,6 @@ function setCopyBtn() {
 }
 
 function copyLink(e) {
-
   // copy link
 
   var textarea = document.createElement("textarea"); // create textarea element

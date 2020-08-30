@@ -73,28 +73,28 @@
 }
 .text-big {
   font-size: 3rem;
-  letter-spacing: -.2rem;
+  letter-spacing: -0.2rem;
 }
-.long-line{
+.long-line {
   left: 50%;
-  transform: translateX(-50%)
+  transform: translateX(-50%);
 }
 
-.error{
+.error {
   border: 3px solid #f56565;
 }
-.copied-btn{
+.copied-btn {
   background-color: hsl(257, 27%, 26%);
 }
-.short-links{
+.short-links {
   position: relative;
   top: 8em;
 }
 @screen lg {
-  .responsive-hero{
+  .responsive-hero {
     @apply flex flex-row-reverse w-90 m-auto my-4;
   }
-  .nav{
+  .nav {
     position: static;
     transform: none;
   }

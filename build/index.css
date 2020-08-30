@@ -718,29 +718,29 @@ video {
 
 .text-big {
   font-size: 3rem;
-  letter-spacing: -.2rem;
+  letter-spacing: -0.2rem;
 }
 
-.long-line{
+.long-line {
   left: 50%;
-  transform: translateX(-50%)
+  transform: translateX(-50%);
 }
 
-.error{
+.error {
   border: 3px solid #f56565;
 }
 
-.copied-btn{
+.copied-btn {
   background-color: hsl(257, 27%, 26%);
 }
 
-.short-links{
+.short-links {
   position: relative;
   top: 8em;
 }
 
 @media (min-width: 1024px) {
-  .responsive-hero{
+  .responsive-hero {
     display: flex;
     flex-direction: row-reverse;
     width: 90%;
@@ -749,7 +749,7 @@ video {
     margin-bottom: 1rem;
   }
 
-  .nav{
+  .nav {
     position: static;
     transform: none;
   }
