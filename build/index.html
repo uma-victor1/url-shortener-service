@@ -17,8 +17,9 @@
       <div class="hamburger-line"></div>
     </div>
     <div
-      class=" hidden bg-DarkViolet text-white w-85 m-auto py-10 px-6 rounded-lg flex-col items-center lg:p-0 lg:items-center lg:bg-white lg:mt-4 lg:text-GrayishViolet lg:font-bold lg:flex lg:flex-row ">
-      <ul class="text-center space-y-4  font-semibold text-lg w-full lg:flex lg:space-x-4 lg:space-y-0 lg:items-baseline lg:ml-4 lg:pb-3 lg:text-xl lg:font-bold">
+      class="nav hidden bg-DarkViolet text-white w-85 m-auto py-10 px-6 rounded-lg flex-col items-center lg:p-0 lg:items-center lg:bg-white lg:mt-4 lg:text-GrayishViolet lg:font-bold lg:flex lg:flex-row ">
+      <ul
+        class="text-center space-y-4  font-semibold text-lg w-full lg:flex lg:space-x-4 lg:space-y-0 lg:items-baseline lg:ml-4 lg:pb-3 lg:text-xl lg:font-bold">
         <li><a href="#">Features</a></li>
         <li><a href="#">Pricing</a></li>
         <li><a href="#">Resources</a></li>
@@ -32,7 +33,7 @@
   <div class="responsive-hero xl:mb-12 lg:w-80 lg:m-auto lg:mb-10">
     <div class="w-full h-full text-center overflow-x-hidden lg:overflow-x-visible lg:text-left">
 
-      <div class="w-140 ml-6 mt-8 lg:ml-32">
+      <div class="w-140 lg:w-full ml-6 mt-8 lg:ml-32">
         <img class="max-w-full h-auto" src="images/illustration-working.svg" alt="hero svg" />
       </div>
     </div>
@@ -55,19 +56,31 @@
   </div>
 
   <!-- input link section -->
-  <div class="relative -mb-20 z-10">
+  <div class="relative -mb-24 z-10">
     <div
-      class="url_svg flex flex-col rounded-lg py-5 w-85 px-4 items-center m-auto bg-DarkViolet lg:flex-row lg:align-middle lg:p-12 lg:w-80">
-      <input
-        class="text-gray-700 font-medium placeholder-gray-500 px-3 py-3 w-11/12 rounded-md focus:outline-none focus:bg-gray-100"
-        type="url" name="" id="" placeholder="shorten a link here..." />
-      <button
-        class="btn w-11/12 px-3 py-3 mt-4 font-bold focus:outline-none rounded-md flex-row lg:w-48 lg:ml-8 lg:mt-0">
-        Shorten it!
-      </button>
+      class="url_svg w-85 rounded-lg bg-DarkViolet m-auto lg:w-85">
+      <form title="shortenURL" id="shortenURL" class="shorten-url lg:w-full flex-col px-4 items-center m-auto rounded-lg py-5 flex lg:flex-row lg:align-middle lg:p-12" name="urlForm">
+        <div class="w-11/12">
+
+          <input
+            class="text-gray-700 font-medium  placeholder-gray-500 px-3 py-3 w-full rounded-md focus:outline-none focus:bg-gray-100"
+            type="url" name="" id="url" placeholder="shorten a link here..." />
+          <div id="error-msg" class="text-red-500 inline-block text-sm ml-4 self-start mb-4"></div>
+        </div>
+        <button title="submit-button" id="submit-btn" type="submit"
+          class="btn lg:self-start w-11/12 px-3 py-3 font-bold focus:outline-none rounded-md flex-row lg:w-48 lg:ml-8 lg:mt-0">
+          Shorten it!
+        </button>
+      </form>
     </div>
   </div>
+
+  
+
   <section class="bg-Grayish relative text-center pb-24">
+    <div class="short-links w-85  m-auto ">
+
+    </div>
     <div class="pt-40 w-85 m-auto">
       <h2 class="text-3xl font-bold text-VeryDarkBlue">
         Advanced Statistics

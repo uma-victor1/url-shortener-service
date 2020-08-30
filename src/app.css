@@ -79,9 +79,24 @@
   left: 50%;
   transform: translateX(-50%)
 }
+
+.error{
+  border: 3px solid #f56565;
+}
+.copied-btn{
+  background-color: hsl(257, 27%, 26%);
+}
+.short-links{
+  position: relative;
+  top: 8em;
+}
 @screen lg {
   .responsive-hero{
     @apply flex flex-row-reverse w-90 m-auto my-4;
+  }
+  .nav{
+    position: static;
+    transform: none;
   }
 }
 

@@ -726,6 +726,19 @@ video {
   transform: translateX(-50%)
 }
 
+.error{
+  border: 3px solid #f56565;
+}
+
+.copied-btn{
+  background-color: hsl(257, 27%, 26%);
+}
+
+.short-links{
+  position: relative;
+  top: 8em;
+}
+
 @media (min-width: 1024px) {
   .responsive-hero{
     display: flex;
@@ -734,6 +747,11 @@ video {
     margin: auto;
     margin-top: 1rem;
     margin-bottom: 1rem;
+  }
+
+  .nav{
+    position: static;
+    transform: none;
   }
 }
 
