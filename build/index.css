@@ -709,7 +709,7 @@ video {
 }
 
 .nav {
-  position: fixed;
+  position: absolute;
   right: 50%;
   top: 5em;
   left: 50%;
